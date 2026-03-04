@@ -33,6 +33,6 @@
 
 ## 🌐 Դիտել Նախագիծը
 
-🔗 **Live Demo:** bible-slide.netlify.app
+🔗 **Live Demo:** https://get-bible-verse.netlify.app
 
 ---
