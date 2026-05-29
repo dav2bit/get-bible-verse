@@ -1,38 +1,36 @@
 # 📖 Get-Bible-Verse
 
-Այս նախագիծը ստեղծվել է եկեղեցական համայնքի համար՝ ապահովելով Աստվածաշնչյան հատվածների արագ որոնում, վիզուալիզացիա և սլայդների ավտոմատ գեներացիա։
+A specialized, high-performance web ecosystem designed for church presentation workflows. It enables rapid biblical text querying, dynamic visualization, and automated multi-window slide generation.
 
 ---
 
-## 🚀 Հիմնական Հնարավորություններ
+## 🚀 Key Features
 
-* **Advanced Search Logic:** Regex-ի միջոցով իրականացվող որոնում, որն աջակցում է հայերեն բարդ հարցումներին և ներառում է Autocomplete համակարգ՝ արագ կողմնորոշվելու համար։
-* **Cross-Window Projection:** Օգտագործում է BroadcastChannel API՝ հիմնական պատուհանից տվյալները երկրորդական (պրոյեկցիոն) պատուհանին փոխանցելու և սլայդները իրական ժամանակում կառավարելու համար։
-* **Automated PPTX Generation:** Ինտեգրված է PptxGenJS գրադարանը, որը թույլ է տալիս ընտրված համարներից ստեղծել և ներբեռնել PowerPoint ֆայլեր։
-* **Intelligent Slide Splitting:** Ներդրված է հատուկ ալգորիթմ, որը հաշվում է նիշերի քանակը և տեքստը դինամիկ կերպով բաժանում սլայդների՝ ապահովելով էկրանին առավելագույն ընթեռնելիություն։
-* **Custom Theme Engine:** Աջակցում է Dark և Light ռեժիմներին, որոնք պահպանվում են localStorage-ում՝ օգտատիրոջ նախապատվությունները հիշելու համար։
-
----
-
-## 🛠️ Տեխնիկական Stack
-
-* **Frontend:** JavaScript (ES6+), HTML5, CSS3
-* **Libraries:** PptxGenJS (PowerPoint Generation)
-* **APIs:** BroadcastChannel API (Multi-window synchronization)
-* **Data Processing:** Python սկրիպտների միջոցով իրականացվել է տվյալների արդյունահանում (reverse engineering) և վերափոխում JSON ֆորմատի։
+* **Advanced Search Logic:** Built-in Regex-powered search engine that supports complex textual queries with integrated Autocomplete mechanics for instantaneous navigation.
+* **Cross-Window Projection:** Leverages the `BroadcastChannel API` to seamlessly dispatch state and payload data from the control window to a secondary projection screen, enabling real-time, zero-latency slide management.
+* **Automated PPTX Generation:** Integrated with `PptxGenJS` to dynamically compile and export selected verses into structured, production-ready PowerPoint presentations directly from the browser.
+* **Intelligent Slide Splitting:** Implements a custom text-chunking algorithm that evaluates character length and dynamically splits long passages into perfectly proportioned slides to guarantee maximum screen readability.
+* **Custom Theme Engine:** Features reactive Light and Dark modes with state persistence managed via `localStorage`.
 
 ---
 
-## ⚙️ Ինչպես է այն աշխատում
+## 🛠️ Technical Stack
 
-1. **Տվյալների Մշակում:** Տվյալների բազայի բացակայող կառուցվածքը լրացվել է Python ալգորիթմի միջոցով, որը համեմատում է համարները և ավտոմատ սահմանում գլուխներն ու գրքերը։
-2. **Որոնում:** Օգտատերը ներմուծում է հղումը, որը մշակվում է Regex-ով և համապատասխանեցվում JSON շտեմարանի հետ։
-3. **Պրոյեկցիա:** BroadcastChannel-ի միջոցով հրամանները և տեքստը ուղարկվում են առանձին բացված պատուհանին, որը նախատեսված է էկրանին կամ պրոյեկտորին ցուցադրելու համար։
+* **Frontend Architecture:** Pure JavaScript (ES6+), HTML5, CSS3.
+* **Core Libraries:** PptxGenJS (Client-side PowerPoint generation).
+* **Web APIs:** BroadcastChannel API (Multi-window state synchronization).
+* **Data Pipelines:** Python automation scripts used for raw text extraction, structural reverse engineering, and conversion into high-performance relational JSON schemas.
+
+---
+
+## ⚙️ Architectural Workflow
+
+1. **Data Engineering & Extraction:** Solved missing database structures via customized Python scripts that perform sequence-matching algorithms across verses to automatically map chapters and biblical book schemas.
+2. **Query Processing:** User input is parsed via granular Regular Expressions (Regex) and instantly matched against the local performance-optimized JSON data layers.
+3. **Synchronization & Projection:** The ecosystem utilizes a unidirectional `BroadcastChannel` pipeline to broadcast rendering instructions to an isolated display window designed specifically for projectors or church screens.
 
 ---
 
-## 🌐 Դիտել Նախագիծը
+## 🌐 Live Demo
 
-🔗 **Live Demo:** https://get-bible-verse.netlify.app
-
----
+🔗 **Production Link:** https://get-bible-verse.netlify.app
